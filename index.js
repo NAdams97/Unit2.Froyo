@@ -39,25 +39,14 @@ function getCoffee() {
   return amountCoffee
 }
 
-//Objects
+//Object
 
-  const vanilla = {
-    flavor: "Vanilla",
-    scoops: getVanilla()
-  }
+const order = {
+  vanillaScoops: getVanilla(),
+  strawberryScoops: getStrawberry(),
+  coffeeScoops: getCoffee()
+}
+ 
+//Table
 
-  const strawberry = {
-    flavor: "Strawberry",
-    scoops: getStrawberry()
-  }
-
-  const coffee = {
-    flavor: "Coffee",
-    scoops: getCoffee()
-  }
-
-//Tables
-
-  console.table(vanilla)
-  console.table(strawberry)
-  console.table(coffee)
+console.table(order)
